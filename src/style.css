@@ -21,6 +21,55 @@ body {
   font-family: var(--primary-font);
 }
 
+/* Start of re-usable components */
+.title {
+  position: relative;
+}
+
+.min-title {
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  font-size: 6rem;
+  font-weight: bolder;
+  color: var(--primary-light-color);
+  position: absolute;
+  left: 40%;
+  bottom: 30%;
+  z-index: 3;
+}
+
+.main-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6rem;
+  position: relative;
+  z-index: 5;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 700px) {
+  .main-title {
+    font-size: 4rem;
+  }
+
+  .min-title {
+    font-size: 5rem;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .min-title {
+    font-size: 4rem;
+    bottom: 20%;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+}
+/* End of re-usable components */
+
 * {
   padding: 0;
   margin: 0;
@@ -135,7 +184,8 @@ li {
 /* Hero Styling Start */
 .hero-section {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(./images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -259,3 +309,9 @@ li {
   font-size: 1.4rem;
 }
 /* Meals Category Stylings End */
+
+/* Start of Special Dishes Styling */
+.special-dishes-section {
+  padding: 10rem 5rem;
+}
+/* End of Special Dishes Styling */
