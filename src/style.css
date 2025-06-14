@@ -220,3 +220,42 @@ li {
   text-align: center;
 }
 /* Hero Styling End */
+
+/* Meals Category Stylings Start */
+
+.meals-category-wrapper {
+  padding: 10rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: var(--color-grey);
+}
+
+.meal-category {
+  width: 25rem;
+}
+
+.meal-image {
+  width: 8rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.meals-title,
+.meals-description {
+  text-align: center;
+}
+
+.meals-title {
+  color: var(--primary-light-color);
+  text-transform: capitalize;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.meals-description {
+  color: var(--color-grey-dark);
+  font-size: 1.4rem;
+}
+/* Meals Category Stylings End */
