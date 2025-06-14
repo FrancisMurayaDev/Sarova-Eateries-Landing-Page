@@ -12,6 +12,15 @@
   --secondary-font: "Edu NSW ACT Hand Pre", cursive;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -26,12 +35,4 @@ ul,
 ol,
 li {
   list-style: none;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
 }
