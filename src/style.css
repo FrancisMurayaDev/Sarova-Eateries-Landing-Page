@@ -65,4 +65,69 @@ li {
   font-weight: 600;
 }
 
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.sarova-logo-link {
+  color: var(--color-black-main);
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.menu-btn {
+  display: none;
+}
+.navigation-items-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .navigation-items-list {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navigation-items-list {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-grey-dark);
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.nav-item a {
+  font: 2rem;
+  color: var(--color-black-main);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.nav-ctn-btn {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.nav-ctn-btn a {
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+}
 /* End of Header Stylings */
