@@ -588,8 +588,21 @@ li {
 .chefs-container-wrapper {
   padding: 5rem 15rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem;
+}
+
+@media screen and (max-width: 1290px) {
+  .chefs-container-wrapper {
+    padding: 5rem 0rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .chefs-section {
+    padding: 5rem 1rem;
+  }
 }
 
 .chef-card {
