@@ -403,4 +403,82 @@ li {
 .special-dishes-section {
   padding: 10rem 5rem;
 }
+
+@media screen and (max-width: 930px) {
+  .special-dishes-section {
+    padding: 10rem 1rem;
+  }
+}
+
+.special-meals-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-top: 6rem;
+}
+
+.special-meal-card {
+  --meal-card-width: 35rem;
+  width: var(--meal-card-width);
+  height: var(--meal-card-width);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.special-meal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s cubic-bezier(0.22, 0.6, 0.86, 0.49);
+}
+
+.special-meal-card:hover img {
+  transform: scale(1.5);
+}
+
+.meals-description-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.meal-price {
+  color: white;
+  background-color: var(--primary-light-color);
+  --custom-meal-width: 12rem;
+  width: var(--custom-meal-width);
+  height: var(--custom-meal-width);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  transition: all 0.4s cubic-bezier(0.15, 0.81, 0.86, 0.49);
+}
+
+.special-meal-card:hover .meal-price {
+  transform: scale(1.1);
+  background-color: transparent;
+  border: 2px solid var(--color-white-light);
+}
+
+.meal-title {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* End of Special Dishes Styling */
