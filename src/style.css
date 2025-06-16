@@ -10,6 +10,7 @@
   --color-black-light: #262626;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Edu NSW ACT Hand Pre", cursive;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -181,11 +182,32 @@ li {
 }
 /* End of Header Stylings */
 
+/* Scroll button styling start  */
+
+.scroll-btn {
+  --scroll-btn-length: 5rem;
+  width: var(--scroll-btn-length);
+  height: var(--scroll-btn-length);
+  background-color: var(--primary-light-color);
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+/* Scroll button styling End  */
+
 /* Hero Styling Start */
 .hero-section {
   min-height: 100vh;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(./images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
