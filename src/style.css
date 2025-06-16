@@ -693,3 +693,41 @@ li {
 }
 
 /* Our Chefs styling end */
+
+/* Start of Testimonials Stylings  */
+
+.testimonial-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 7rem 4rem;
+}
+
+.testimonial-card {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white-lighter);
+}
+
+.customer-image {
+  --customer-image-dimensions: 15rem;
+  width: var(--customer-image-dimensions);
+  height: var(--customer-image-dimensions);
+  clip-path: polygon(0 2%, 100% 0, 100% 75%, 47% 100%, 29% 90%, 0 75%);
+}
+
+.customer-name {
+  color: var(--color-black-main);
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+
+.description-testimony {
+  color: var(--color-grey-dark);
+  font-size: smaller;
+  text-align: center;
+}
+/* End of Testimonials Stylings  */
