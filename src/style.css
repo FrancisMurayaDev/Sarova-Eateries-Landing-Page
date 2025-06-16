@@ -184,7 +184,8 @@ li {
 /* Hero Styling Start */
 .hero-section {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(./images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -482,3 +483,70 @@ li {
 }
 
 /* End of Special Dishes Styling */
+
+/* Start of Menu Stylings */
+.menu-section {
+  background-color: var(--color-white-lighter);
+  padding: 10rem 5rem;
+  margin: 5rem 0;
+}
+
+.menu-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.menu-card-description {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 1.5rem;
+  background-color: var(--color-white);
+  box-shadow: -1px 3px 14px 0px rgba(223, 219, 219, 0.75);
+  -webkit-box-shadow: -1px 3px 14px 0px rgba(184, 170, 170, 0.75);
+  -moz-box-shadow: -1px 3px 14px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-heading {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.menu-price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-light-color);
+}
+
+.menu-description {
+  font-size: 1.4rem;
+  color: var(--color-grey-dark);
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-cards-wrapper {
+    flex-direction: column;
+  }
+
+  .menu-card-description {
+    width: 95%;
+  }
+
+  .menu-cards-wrapper {
+    align-items: center;
+  }
+
+  .menu-section {
+    padding: 10rem 2rem;
+  }
+}
+/* End of Menu Stylings */
